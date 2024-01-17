@@ -6,6 +6,7 @@ using System;
 // C >= 70
 // D >= 60
 // F < 60
+
 class Program
 {
     static void Main(string[] args)
