@@ -1,25 +1,24 @@
 public class Entry {
 
-    public string dateText;
 
-    public string _prompt; 
+    private string prompt; 
 
-    public string _date;
+    private string date;
 
-    public string GivePrompt() {
+    public static string GivePrompt() {
         PromptGenerator promptGenerator = new PromptGenerator();
         return promptGenerator.GetPrompt();
     }
 
 
-    public string GetDate() {
+    public static string GetDate() {
         DateTime theCurrentTime = DateTime.Now;
-        return dateText = theCurrentTime.ToShortDateString();
+        return theCurrentTime.ToShortDateString();
     }
 
     public string Display() {
-        _prompt = GivePrompt();
-        _date = GetDate();
-        return $"Date: {_date} - Prompt: {_prompt}";
+        prompt = GivePrompt();
+        date = GetDate();
+        return $"Date: {date} - Prompt: {prompt}";
     }
 }
