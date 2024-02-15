@@ -1,5 +1,7 @@
 using System;
-
+// To exceed requirements, I made sure only words that haven't been changed yet
+// were changed, instead of having the posibility of repeatedly hidding already
+// hidden words. 
 class Program
 {
     static void Main(string[] args)
