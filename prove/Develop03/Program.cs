@@ -10,7 +10,6 @@ class Program
         Reference reference = new Reference();
         Word word = new Word();
         
-
         int _index = scripture.RandomScriptureIndex();
         int _timesThrough = 0;
 
@@ -19,7 +18,6 @@ class Program
         word.VerseToList(_text);
 
         int _textLen = word.WordCount();
-
 
         while (_textLen > 0) {
             Console.Clear();
