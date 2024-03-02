@@ -51,7 +51,7 @@ abstract class Activity {
     // Display info for activity
     protected void ActivityInfo() {
         Console.Clear();
-        Console.WriteLine(activityName);
+        Console.WriteLine($"Welcome to the {activityName}");
         Console.WriteLine();
         Console.WriteLine(activityDesc);
     }
